@@ -30,6 +30,7 @@ class StudentsController < ApplicationController
   
   def search 
     @student = Student.search(params[:query])
+    binding.pry
     render :show
   end 
 end
