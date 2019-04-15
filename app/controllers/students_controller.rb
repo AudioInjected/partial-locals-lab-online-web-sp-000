@@ -29,7 +29,7 @@ class StudentsController < ApplicationController
   end
   
   def search 
-    @student = Student.search(params[:query])
-    render :show
+    @students = Student.search(params[:query])
+    render :index
   end 
 end
