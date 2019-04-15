@@ -29,6 +29,7 @@ class StudentsController < ApplicationController
   end
   
   def search 
+    
     binding.pry
   end 
 end
