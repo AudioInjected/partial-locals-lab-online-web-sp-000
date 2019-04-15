@@ -29,7 +29,6 @@ class StudentsController < ApplicationController
   end
   
   def search 
-    
-    binding.pry
+    @student = Student.search(params[:query])
   end 
 end
