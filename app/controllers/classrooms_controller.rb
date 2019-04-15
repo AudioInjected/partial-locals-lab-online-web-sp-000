@@ -1,7 +1,7 @@
 class ClassroomsController < ApplicationController
   def show
-    binding.pry
     @classroom = Classroom.find(params[:id])
+    raise @students.inspect
     @students = @classroom.students
   end
 
